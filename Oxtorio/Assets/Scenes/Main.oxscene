@@ -1,0 +1,157 @@
+# Oxylus scene file 
+name = 'Main'
+
+[[entities]]
+
+[[entities.entity]]
+uuid = '11929694906142612922'
+
+[[entities.entity]]
+
+[entities.entity.tag_component]
+enabled = true
+tag = 'GameManager'
+
+[[entities.entity]]
+
+[entities.entity.relationship_component]
+children = []
+parent = '0'
+
+[[entities.entity]]
+
+[entities.entity.transform_component]
+position = [ 0.0, 0.0, 0.0 ]
+rotation = [ 0.0, 0.0, 0.0 ]
+scale = [ 1.0, 1.0, 1.0 ]
+
+[[entities.entity]]
+
+[entities.entity.lua_script_component]
+path = 'Assets/Scripts/ItemSpawner.lua'
+
+[[entities]]
+
+[[entities.entity]]
+uuid = '2770934990541113455'
+
+[[entities.entity]]
+
+[entities.entity.tag_component]
+enabled = true
+tag = 'Light'
+
+[[entities.entity]]
+
+[entities.entity.relationship_component]
+children = []
+parent = '0'
+
+[[entities.entity]]
+
+[entities.entity.transform_component]
+position = [ 0.0, 0.0, 0.0 ]
+rotation = [ -0.5445427298545837, 0.9616763591766357, 0.8168140649795532 ]
+scale = [ 1.0, 1.0, 1.0 ]
+
+[[entities.entity]]
+
+[entities.entity.light_component]
+cast_shadows = true
+color = [ 1.0, 1.0, 1.0 ]
+cut_off_angle = 0.21816615760326385
+intensity = 10.0
+outer_cut_off_angle = 0.30543261766433716
+range = 1.0
+shadow_quality = 2
+temperature = 6570
+type = 0
+use_color_temperature_mode = false
+
+[[entities]]
+
+[[entities.entity]]
+uuid = '3249280840520843931'
+
+[[entities.entity]]
+
+[entities.entity.tag_component]
+enabled = true
+tag = 'Plane'
+
+[[entities.entity]]
+
+[entities.entity.relationship_component]
+children = []
+parent = '0'
+
+[[entities.entity]]
+
+[entities.entity.transform_component]
+position = [ 0.0, 0.0, 0.0 ]
+rotation = [ 0.0, -0.0, 0.0 ]
+scale = [ 25.0, 1.0, 25.0 ]
+
+[[entities.entity]]
+
+[entities.entity.mesh_component]
+cast_shadows = true
+mesh_path = 'Assets/Objects/ground.glb'
+node_index = 0
+
+[[entities.entity]]
+
+[entities.entity.rigidbody_component]
+allow_sleep = true
+angular_drag = 0.05000000074505806
+awake = true
+continuous = false
+gravity_scale = 1.0
+interpolation = false
+is_sensor = false
+linear_drag = 0.0
+mass = 1.0
+type = 0
+
+[[entities.entity]]
+
+[entities.entity.mesh_collider_component]
+friction = 0.5
+offset = [ 0.0, 0.0, 0.0 ]
+restitution = 0.0
+
+[[entities]]
+
+[[entities.entity]]
+uuid = '57506901083152685'
+
+[[entities.entity]]
+
+[entities.entity.tag_component]
+enabled = true
+tag = 'Camera'
+
+[[entities.entity]]
+
+[entities.entity.relationship_component]
+children = []
+parent = '0'
+
+[[entities.entity]]
+
+[entities.entity.transform_component]
+position = [ -7.897899150848389, 4.5, 0.0 ]
+rotation = [ -0.6108652353286743, 0.0, 0.0 ]
+scale = [ 1.0, 1.0, 1.0 ]
+
+[[entities.entity]]
+
+[entities.entity.camera_component]
+far = 1000.0
+fov = 60.0
+near = 0.009999999776482582
+
+[[entities.entity]]
+
+[entities.entity.lua_script_component]
+path = 'Assets/Scripts/CameraController.lua'

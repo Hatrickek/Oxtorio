@@ -1,0 +1,5 @@
+[project]
+name = "Oxtorio"
+asset_directory = "Assets"
+start_scene = "Scenes/Main.oxscene"
+module_name = "OxtorioModule"
