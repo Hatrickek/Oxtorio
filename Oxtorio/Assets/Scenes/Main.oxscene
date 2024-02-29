@@ -4,7 +4,7 @@ name = 'Main'
 [[entities]]
 
 [[entities.entity]]
-uuid = '11929694906142612922'
+uuid = '11222734719590317751'
 
 [[entities.entity]]
 
@@ -28,7 +28,36 @@ scale = [ 1.0, 1.0, 1.0 ]
 [[entities.entity]]
 
 [entities.entity.lua_script_component]
-path = 'Assets/Scripts/ItemSpawner.lua'
+path = 'Scripts/GameManager.lua'
+
+[[entities]]
+
+[[entities.entity]]
+uuid = '11929694906142612922'
+
+[[entities.entity]]
+
+[entities.entity.tag_component]
+enabled = true
+tag = 'ItemSpawner'
+
+[[entities.entity]]
+
+[entities.entity.relationship_component]
+children = []
+parent = '0'
+
+[[entities.entity]]
+
+[entities.entity.transform_component]
+position = [ 0.0, 0.0, 0.0 ]
+rotation = [ 0.0, 0.0, 0.0 ]
+scale = [ 1.0, 1.0, 1.0 ]
+
+[[entities.entity]]
+
+[entities.entity.lua_script_component]
+path = 'Scripts/ItemSpawner.lua'
 
 [[entities]]
 
@@ -59,6 +88,7 @@ scale = [ 1.0, 1.0, 1.0 ]
 [entities.entity.light_component]
 cast_shadows = true
 color = [ 1.0, 1.0, 1.0 ]
+color_temperature_mode = false
 cut_off_angle = 0.21816615760326385
 intensity = 10.0
 outer_cut_off_angle = 0.30543261766433716
@@ -66,7 +96,6 @@ range = 1.0
 shadow_quality = 2
 temperature = 6570
 type = 0
-use_color_temperature_mode = false
 
 [[entities]]
 
@@ -96,7 +125,7 @@ scale = [ 25.0, 1.0, 25.0 ]
 
 [entities.entity.mesh_component]
 cast_shadows = true
-mesh_path = 'Assets/Objects/ground.glb'
+mesh_path = 'Objects/ground.glb'
 node_index = 0
 
 [[entities.entity]]
@@ -154,4 +183,4 @@ near = 0.009999999776482582
 [[entities.entity]]
 
 [entities.entity.lua_script_component]
-path = 'Assets/Scripts/CameraController.lua'
+path = 'Scripts/CameraController.lua'

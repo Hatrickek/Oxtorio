@@ -1,5 +1,7 @@
 ﻿#pragma once
 
+#include <cstdint>
+
 namespace Ox {
 struct PlaceableComponent {
   bool placed;
