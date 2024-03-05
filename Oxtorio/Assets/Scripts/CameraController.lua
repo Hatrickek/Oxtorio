@@ -37,7 +37,7 @@ function on_update(dt)
 
     if Input.get_key_held(Key.W) then
         if use_camera then
-            tc.position = tc.position + (cc.camera:get_front() * speed * dt);
+            tc.position = tc.position + (cc.camera:get_forward() * speed * dt);
         else
             tc.position.x = tc.position.x + (speed * dt);
         end
@@ -45,7 +45,7 @@ function on_update(dt)
 
     if Input.get_key_held(Key.S) then
         if use_camera then
-            tc.position = tc.position - (cc.camera:get_front() * speed * dt);
+            tc.position = tc.position - (cc.camera:get_forward() * speed * dt);
         else
             tc.position.x = tc.position.x - (speed * dt);
         end

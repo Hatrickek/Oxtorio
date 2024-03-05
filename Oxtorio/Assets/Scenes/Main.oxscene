@@ -4,13 +4,13 @@ name = 'Main'
 [[entities]]
 
 [[entities.entity]]
-uuid = '11222734719590317751'
+uuid = '57506901083152685'
 
 [[entities.entity]]
 
 [entities.entity.tag_component]
 enabled = true
-tag = 'GameManager'
+tag = 'Camera'
 
 [[entities.entity]]
 
@@ -21,14 +21,21 @@ parent = '0'
 [[entities.entity]]
 
 [entities.entity.transform_component]
-position = [ 0.0, 0.0, 0.0 ]
-rotation = [ 0.0, 0.0, 0.0 ]
+position = [ -7.897899150848389, 4.5, 0.0 ]
+rotation = [ -0.6108652353286743, 0.0, 0.0 ]
 scale = [ 1.0, 1.0, 1.0 ]
 
 [[entities.entity]]
 
+[entities.entity.camera_component]
+far = 1000.0
+fov = 60.0
+near = 0.009999999776482582
+
+[[entities.entity]]
+
 [entities.entity.lua_script_component]
-path = 'Scripts/GameManager.lua'
+paths = [ 'Scripts/CameraController.lua' ]
 
 [[entities]]
 
@@ -57,7 +64,7 @@ scale = [ 1.0, 1.0, 1.0 ]
 [[entities.entity]]
 
 [entities.entity.lua_script_component]
-path = 'Scripts/ItemSpawner.lua'
+paths = [ 'Scripts/ItemSpawner.lua' ]
 
 [[entities]]
 
@@ -152,13 +159,13 @@ restitution = 0.0
 [[entities]]
 
 [[entities.entity]]
-uuid = '57506901083152685'
+uuid = '6964131423949675400'
 
 [[entities.entity]]
 
 [entities.entity.tag_component]
 enabled = true
-tag = 'Camera'
+tag = 'GameManager'
 
 [[entities.entity]]
 
@@ -169,18 +176,11 @@ parent = '0'
 [[entities.entity]]
 
 [entities.entity.transform_component]
-position = [ -7.897899150848389, 4.5, 0.0 ]
-rotation = [ -0.6108652353286743, 0.0, 0.0 ]
+position = [ 0.0, 0.0, 0.0 ]
+rotation = [ 0.0, 0.0, 0.0 ]
 scale = [ 1.0, 1.0, 1.0 ]
 
 [[entities.entity]]
 
-[entities.entity.camera_component]
-far = 1000.0
-fov = 60.0
-near = 0.009999999776482582
-
-[[entities.entity]]
-
 [entities.entity.lua_script_component]
-path = 'Scripts/CameraController.lua'
+paths = [ 'Scripts/GameManager.lua', 'Scripts/MinerSystem.lua', 'Scripts/BeltSystem.lua' ]

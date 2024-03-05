@@ -14,7 +14,7 @@ function create_ore()
     local path = App.get_absolute("Objects/iron_ore.glb");
     local mesh = Assets.get_mesh(path);
     local ore_entity = scene:load_mesh(mesh);
-    owner:emplace(ore_entity, OreComponent(OreType.Iron));
+    owner:emplace(ore_entity, OreComponent.new(OreType.Iron));
     return ore_entity;
 end
 
@@ -38,7 +38,7 @@ function create_place_entity(component, mesh_path)
     place_entity = scene:load_mesh(mesh);
     default_material = owner:get(place_entity, MeshComponent).materials[1];
     owner:get(place_entity, TagComponent).tag = "placeable";
-    owner:emplace(place_entity, PlaceableComponent(false));
+    owner:emplace(place_entity, PlaceableComponent.new(false));
     owner:emplace(place_entity, component);
 end
 
@@ -191,7 +191,7 @@ function on_imgui_render()
                 local path = App.get_absolute("Objects/miner.glb");
 
                 if not place_entity then
-                    create_place_entity(MinerComponent(1.0), path);
+                    create_place_entity(MinerComponent.new(), path);
                 else
                     owner:destroy(place_entity);
                     place_entity = nil;
@@ -202,7 +202,7 @@ function on_imgui_render()
                 local path = App.get_absolute("Objects/belt.glb");
 
                 if not place_entity then
-                    create_place_entity(BeltComponent(1.0), path);
+                    create_place_entity(BeltComponent.new(1.0), path);
                 else
                     owner:destroy(place_entity);
                     place_entity = nil;

@@ -10,7 +10,7 @@ struct PlaceableComponent {
 enum class OreType : uint32_t { None, Iron, Stone, Copper };
 
 struct MinerComponent {
-  float speed;
+  float speed = 5000.0f; // Miliseconds
   OreType type = OreType::None;
 };
 
@@ -20,5 +20,9 @@ struct OreComponent {
 
 struct BeltComponent {
   float speed;
+};
+
+struct PickableComponent {
+  bool picked;
 };
 }
